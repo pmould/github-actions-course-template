@@ -11,7 +11,7 @@
     "build": "npx webpack --config ./src/webpack.config.js --mode production",
     "dev": "npx webpack --config ./src/webpack.config.js --mode development --watch",
     "test": "npx standard && npx jest",
-    "script": "node ./src/script.js"
+    "script": "ts-node ./src/script.js"
   },
   "author": "githubtraining",
   "license": "MIT",
@@ -30,9 +30,9 @@
     "html-webpack-plugin": "^3.2.0",
     "script-ext-html-webpack-plugin": "^2.1.3",
     "standard": "^14.3.1",
+    "ts-node": "^10.9.2",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
-  },
-  "dependencies": {}
+  }
 }
