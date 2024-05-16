@@ -28,6 +28,8 @@ jobs:
         REGION: ${{ github.event.inputs.region}}
         # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # ADD_LABEL: "approved"
-      run: REGION=npm run script
+      run: npm run script
+      # run: REGION=${{ github.event.inputs.region}} npm run script
+    
 
     
