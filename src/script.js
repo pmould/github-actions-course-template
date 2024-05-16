@@ -1,1 +1,0 @@
-console.log('OUTPUT process.env.REGION: ', process.env.REGION)
