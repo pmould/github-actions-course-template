@@ -11,7 +11,7 @@
     "build": "npx webpack --config ./src/webpack.config.js --mode production",
     "dev": "npx webpack --config ./src/webpack.config.js --mode development --watch",
     "test": "npx standard && npx jest",
-    "script": "ts-node ./src/script.js"
+    "script": "ts-node ./src/script.ts"
   },
   "author": "githubtraining",
   "license": "MIT",
