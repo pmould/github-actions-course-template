@@ -21,10 +21,10 @@ jobs:
     #   # ADD_LABEL: "approved"
     - name: Checkout Source Code
       uses: actions/checkout@v3
-    - name: Install Dependencies
-      run: npm i
     - name: Setup Node
       uses: actions/setup-node@v3
+    - name: Install Dependencies
+      run: npm i
     - name: Run Script
       env:
         REGION: ${{ github.event.inputs.region}}
