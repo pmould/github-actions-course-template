@@ -15,16 +15,19 @@ jobs:
     steps:
     # - name: Label approved pull requests
     #   uses: abinoda/label-when-approved-action@1.0.5
-    #   env:
-    #     APPROVALS: "1"
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #     ADD_LABEL: "approved"
+    # env:
+    #   REGION: ${{ github.event.inputs.region}}
+    #   # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   # ADD_LABEL: "approved"
     - name: Checkout Source Code
       uses: actions/checkout@v3
     - name: Setup Node
       uses: actions/setup-node@v3
     - name: Run Script
-      run: REGION=${{ github.event.inputs.region}} npm run script
-
+      env:
+        REGION: ${{ github.event.inputs.region}}
+        # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # ADD_LABEL: "approved"
+      run: REGION=npm run script
 
     
