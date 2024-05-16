@@ -19,6 +19,8 @@ jobs:
     #     APPROVALS: "1"
     #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     #     ADD_LABEL: "approved"
+    - name: Checkout Source Code
+      uses: actions/checkout@v3
     - name: Setup Node
       uses: actions/setup-node@v3
     - name: Run Script
